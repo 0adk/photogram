@@ -13,7 +13,13 @@ const CommentSection = ({ user }) => {
     try {
       // Pobieranie komentarzy z serwera
       const response = await fetch(
-        "https://my-json-server.typicode.com/0adk/json-server-photogram"
+        "https://my-json-server.typicode.com/0adk/json-server-photogram",
+        {
+          method: "GET",
+          headers: {
+            "Access-Control-Allow-Origin": "*",
+          },
+        }
       );
       // Obsługa odpowiedzi z serwera
       if (!response.ok) {
