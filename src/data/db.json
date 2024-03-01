@@ -1,0 +1,22 @@
+{
+  "comments": [
+    {
+      "id": "1",
+      "nickname": "harmony123",
+      "content": "Zapnijcie pasy, jedziemy z Reactem!",
+      "avatar": "/images/avatars/av1.jpg"
+    },
+    {
+      "id": "2",
+      "nickname": "johnny2000",
+      "content": "Nice! Liczę na dobre wrażenia z Reactem, dołączam do zabawy!",
+      "avatar": "/images/avatars/av2.jpg"
+    },
+    {
+      "id": "0667",
+      "nickname": "alina_malina",
+      "content": "Ja również :D",
+      "avatar": "/images/avatars/av3.jpg"
+    }
+  ]
+}
