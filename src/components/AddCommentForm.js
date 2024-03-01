@@ -10,8 +10,8 @@ const AddCommentForm = ({ user, onAddComment }) => {
   const handleSubmit = async (e) => {
     // Zapobieganie domyślnego zachowania formularza (przeładowania strony) po jego wysłaniu
     e.preventDefault();
-    // Zabezpieczenie przed dodaniem pustego komentarza
-    if (comment.length < 0) return;
+    // Zabezpieczenie przed dodaniem pustego komentarza: metoda trim() usuwa ze tekstu(`string`) - `comment` puste znaki(spacje) a następnie sprawdzamy, czy długość oczyszczonego komentarza jest równa zero. Jeśli tak, funkcja zwraca wartość `undefined`, kończy swoje działanie i nie wykona dalszych instrukcji, co uniemożliwia dodanie pustego komentarza.
+    if (comment.trim().length === 0) return;
 
     // Tworzenie obiektu nowego komentarza
     const newComment = {
@@ -22,7 +22,7 @@ const AddCommentForm = ({ user, onAddComment }) => {
     try {
       // Wysłanie nowego komentarza do serwera
       const response = await fetch(
-        "https://my-json-server.typicode.com/0adk/json-server-photogram",
+        "https://my-json-server.typicode.com/0adk/json-server-photogram/comments",
         {
           method: "POST",
           headers: {
