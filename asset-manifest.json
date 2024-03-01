@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/photogram/static/js/main.6867a47b.js",
+    "main.js": "/photogram/static/js/main.b22e94f9.js",
     "index.html": "/photogram/index.html",
-    "main.6867a47b.js.map": "/photogram/static/js/main.6867a47b.js.map"
+    "main.b22e94f9.js.map": "/photogram/static/js/main.b22e94f9.js.map"
   },
   "entrypoints": [
-    "static/js/main.6867a47b.js"
+    "static/js/main.b22e94f9.js"
   ]
 }
